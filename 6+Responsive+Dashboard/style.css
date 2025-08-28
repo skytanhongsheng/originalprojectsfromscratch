@@ -1,0 +1,91 @@
+/* ------------------ Base Styles ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ Sidebar ------------------ */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+/* ------------------ Main Content ------------------ */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  flex: 1;
+}
+
+/* ------------------ Top Navigation ------------------ */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 22px;
+}
+
+/* ------------------ Dashboard Cards ------------------ */
+.dashboard {
+  padding: 20px;
+  display: grid;
+
+  /* The grid automatically creates as many columns as possible based on the available space.
+
+It fits items nicely without overflowing.
+
+🔹 Example difference:
+If your container is 1000px wide and you want each column to be at least 250px:
+
+auto-fit will try to fit as many columns as possible.
+
+If there's extra space, the columns expand to fill it. */
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap:20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid black;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+      transform: translateY(-5px);
+}
+
+.card.large {
+  grid-column: span 2;
+}
+
+.card.tall {
+  grid-row: span 2;
+}

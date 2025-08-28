@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Dashboard</title>
+  <style>
+    /* ------------------ Base Styles ------------------ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ------------------ Sidebar ------------------ */
+    .sidebar {
+      width: 250px;
+      background-color: #1e1e2f;
+      color: #fff;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #00d9ff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 12px 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar ul li:hover {
+      background-color: #2d2d44;
+    }
+
+    /* ------------------ Main Content ------------------ */
+    .main-content {
+      margin-left: 250px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ------------------ Top Navigation ------------------ */
+    .topbar {
+      background-color: #fff;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .topbar h1 {
+      font-size: 22px;
+    }
+
+    .search-box input {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    /* ------------------ Dashboard Cards ------------------ */
+    .dashboard {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    /* Make some cards bigger */
+    .card.large {
+      grid-column: span 2;
+    }
+
+    .card.tall {
+      grid-row: span 2;
+    }
+
+    /* ------------------ Responsive Sidebar ------------------ */
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>My Dashboard</h2>
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li>📊 Analytics</li>
+      <li>📁 Projects</li>
+      <li>⚙️ Settings</li>
+      <li>🚪 Logout</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Topbar -->
+    <div class="topbar">
+      <h1>Dashboard Overview</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="dashboard">
+      <div class="card">
+        <h3>Sales</h3>
+        <p>$12,450</p>
+      </div>
+      <div class="card">
+        <h3>Visitors</h3>
+        <p>8,350</p>
+      </div>
+      <div class="card large">
+        <h3>Revenue</h3>
+        <p>$24,800</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p>1,250</p>
+      </div>
+      <div class="card tall">
+        <h3>Performance</h3>
+        <p>92%</p>
+      </div>
+      <div class="card">
+        <h3>Tasks</h3>
+        <p>15</p>
+      </div>
+      <div class="card">
+        <h3>Messages</h3>
+        <p>27</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
