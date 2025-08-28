@@ -1,0 +1,40 @@
+
+/* Concepts Applied: */
+/* ------------------ Base Styles ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ Sidebar ------------------ */
+
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  list-style: none;
+
+/* ------------------ Main Content ------------------ */
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  flex: 1;
+
+
+/* ------------------ Top Navigation ------------------ */
+
+  display: flex;
+  justify-content: space-between;
+
+/* ------------------ Dashboard Cards ------------------ */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+  transition: transform 0.3s;
+  transform: translateY(-5px);
+  grid-column: span 2;
+  grid-row: span 2;
