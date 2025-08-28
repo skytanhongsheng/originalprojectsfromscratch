@@ -1,0 +1,62 @@
+/* Reset default styles - so that nav bar reaches end to end for background color*/
+* {
+  /* removes default margins (important: browsers give <body> a 
+  default margin which would otherwise keep the nav from touching the page edges). */
+  margin: 0;
+
+  /* removes default padding from elements (lists, etc.). */
+  padding: 0;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  /* makes the container a flexbox (children laid out in a row by default). */
+  display: flex;
+
+  /* pushes the first child to the far left and the last child to the far right (useful for logo left + links right). */
+  justify-content: space-between;
+
+  /* vertically centers the children inside the navbar. */
+  align-items: center;
+
+  /* 15px top & bottom, 40px left & right — adds inner spacing so the content doesn’t touch the edges. */
+  padding: 15px 40px;
+
+  background-color: black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+
+  /* adds a little space between characters. */
+  letter-spacing: 1px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+section {
+  text-align: center;
+  padding: 40px;
+}
+
+.nav-links li a.active {
+  background-color: blue;
+}

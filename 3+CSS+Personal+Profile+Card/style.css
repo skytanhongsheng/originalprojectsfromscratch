@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(224, 240, 235);
+}
+
+.card {
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -150px; /* half of width */
+  color: black;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.profile-photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
