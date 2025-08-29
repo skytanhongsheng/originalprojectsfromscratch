@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Tip Calculator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f6f8;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .tip-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .tip-buttons button {
+      flex: 1;
+      margin: 5px;
+      padding: 8px;
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .tip-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    button#calculate {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button#calculate:hover {
+      background-color: #218838;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f1f8e9;
+      border: 1px solid #c5e1a5;
+      border-radius: 8px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💵 Simple Tip Calculator</h2>
+
+    <!-- Bill Input -->
+    <label for="billAmount">Bill Amount ($):</label>
+    <input type="number" id="billAmount" placeholder="Enter bill amount" />
+
+    <!-- Tip Percentage Input -->
+    <label for="tipPercentage">Tip Percentage (%):</label>
+    <input type="number" id="tipPercentage" placeholder="Enter tip %" />
+
+    <!-- Quick Tip Buttons -->
+    <div class="tip-buttons">
+      <button onclick="setTip(5)">5%</button>
+      <button onclick="setTip(10)">10%</button>
+      <button onclick="setTip(15)">15%</button>
+    </div>
+
+    <!-- Calculate Button -->
+    <button id="calculate" onclick="calculateTip()">Calculate</button>
+
+    <!-- Result -->
+    <div id="result" class="result" style="display: none;"></div>
+  </div>
+
+  <script>
+    function setTip(value) {
+      document.getElementById("tipPercentage").value = value;
+    }
+
+    function calculateTip() {
+      const billAmount = parseFloat(document.getElementById("billAmount").value);
+      const tipPercentage = parseFloat(document.getElementById("tipPercentage").value);
+
+      // Validate inputs
+      if (isNaN(billAmount) || billAmount <= 0) {
+        alert("Please enter a valid bill amount!");
+        return;
+      }
+      if (isNaN(tipPercentage) || tipPercentage < 0) {
+        alert("Please enter a valid tip percentage!");
+        return;
+      }
+
+      // Calculate tip and total
+      const tipAmount = (billAmount * tipPercentage) / 100;
+      const totalBill = billAmount + tipAmount;
+
+      // Display result
+      const resultDiv = document.getElementById("result");
+      resultDiv.style.display = "block";
+      resultDiv.innerHTML = `
+        <strong>Tip Amount:</strong> $${tipAmount.toFixed(2)} <br>
+        <strong>Total Bill:</strong> $${totalBill.toFixed(2)}
+      `;
+    }
+  </script>
+</body>
+</html>

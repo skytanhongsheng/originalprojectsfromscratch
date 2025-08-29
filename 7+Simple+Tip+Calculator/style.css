@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: blue;
+  color: white;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -200px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.btn {
+  padding: 20px;
+}
+
+#calculate {
+  background-color: green;
+}
+
+button {
+   background-color: black;
+    padding: 20px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}

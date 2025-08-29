@@ -1,0 +1,32 @@
+/* ------------------ Udemy Lessons HTML/CSS/JS Course ------------------ */
+
+1. Introduction to Javascript
+2. Javascript Alerts - Adding Behaviour to Websites
+3. Data Types
+4. Javascript Variables
+5. Javascript Variables Exercise Start
+6. Coding Exercise 1: Javascript Variables Exercise
+7. Javascript Variables Exercise Solution
+8. Naming and Naming Conventions for Javascript Variables
+9. Quiz 2: Javascript Variable Naming Quiz
+10. String Concatenation
+11. String Lengths and Retrieving the Number of Characters
+12. Slicing and Extracting Parts of a String
+13. Challenge: Changing Casing in Text
+14. Challenge: Changing String Casing Solution
+15. Basic Arithmetic and the Modulo Operator in Javascript
+16. Increment and Decrement Expressions
+17. Quiz 3: Javascript Numbers Quiz
+18. Functions Part 1: Creating and Calling Functions
+19. Functions Part 1 Challenge - The Karel Robot
+20. The Karel Chess Board Solution
+21. A Quick Note About the Next Lesson
+22. Functions Part 2: Parameters and Arguments
+23. Coding Exercise 2: Life in Weeks Coding Exercise
+24. Life in Weeks Solution
+25. Functions Part 3: Outputs & Return Values
+26. Challenge: Create a BMI Calculator
+27. Coding Exercise 3: BMI Calculator Challenge
+28. Challenge: BMI Calculator Solution
+29. Quiz 4: JavaScript Functions Quiz
+30. Tip from Angela - Set Your Expectations

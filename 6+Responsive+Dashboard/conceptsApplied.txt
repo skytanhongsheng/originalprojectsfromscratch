@@ -1,3 +1,15 @@
+Display: Flex
+Flex Direction
+Flex Layout
+Flex Sizing
+[Project] Pricing Table
+Tip from Angela - Building a Programming Habit
+Display: Grid
+Grid Sizing
+Grid Placement
+[Project] Mondrian Painting
+
+
 
 /* Concepts Applied: */
 /* ------------------ Base Styles ------------------ */
