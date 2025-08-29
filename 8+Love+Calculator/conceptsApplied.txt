@@ -1,0 +1,21 @@
+/* ------------------ Udemy Lessons HTML/CSS/JS Course ------------------ */
+
+1. Random Number Generation in Javascript: Building a Love Calculator
+2. Control Statements: Using If-Else Conditionals & Logic
+3. Comparators and Equality
+4. Combining Comparators
+5. Coding Exercise 4: BMI Calculator Advanced (IF/ELSE)
+6. Introducing the Leap Year Code Challenge
+7. Coding Exercise 5: Leap Year Challenge Exercise
+8. Leap Year Solution
+9. Collections: Working with Javascript Arrays
+10. Adding Elements and Intermediate Array Techniques
+11. Coding Exercise 6: Who's Buying Lunch? Code Challenge
+12. Who's Buying Lunch Solution
+13. Control Statements: While Loops
+14. Solution to the 99 Bottles Challenge
+15. Control Statements: For Loops
+16. Introducing the Fibonacci Code Challenge
+17. Coding Exercise 7: The Fibonacci Exercise
+18. Fibonacci Solution
+19. Tip from Angela - Retrieval is How You Learn
