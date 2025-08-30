@@ -1,4 +1,5 @@
-/* ------------------ Udemy Lessons HTML/CSS/JS Course ------------------ */
+/* ------------------ Udemy Lessons HTML/CSS/JS Course Section 15------------------ */
+/* ------------------ Intermediate Javascript --------------------------*/
 
 1. Random Number Generation in Javascript: Building a Love Calculator
 2. Control Statements: Using If-Else Conditionals & Logic

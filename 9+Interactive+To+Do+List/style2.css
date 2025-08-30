@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.todo-container {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+li.complete span {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.delete-btn {
+  background-color: red;
+  margin-left: 10px;
+}
+
+#task-list li{
+  list-style-type: none; /* removes bullets */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  padding: 10px;
+}

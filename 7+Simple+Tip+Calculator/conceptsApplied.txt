@@ -1,4 +1,6 @@
-/* ------------------ Udemy Lessons HTML/CSS/JS Course ------------------ */
+/* ------------------ Udemy Lessons HTML/CSS/JS Course Section 15------------------ */
+/* ------------------ Introduction to Javascript ES6 ------------------ */
+
 
 1. Introduction to Javascript
 2. Javascript Alerts - Adding Behaviour to Websites

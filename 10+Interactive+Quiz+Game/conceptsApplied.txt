@@ -1,0 +1,18 @@
+/* ------------------ Udemy Lessons HTML/CSS/JS Course Section 18 ------------------ */
+/* ------------------ Advanced Javascriptand DOM Manipulation ------------------ */
+
+1. What We'll Make: Drum Kit
+2. Download the Starting Files
+3. Adding Event Listeners to a Button
+4. Higher Order Functions and Passing Functions as Arguments
+5. Higher Order Function Challenge Solution
+6. How to Play Sounds on a Website
+7. How to Use Switch Statements in Javascript
+8. A Deeper Understanding of Javascript Objects
+9. Objects, their Methods and the Dot Notation
+10. A Quick Note About the Next Lesson
+11. Using Keyboard Event Listeners to Check for Key Presses
+12. Understanding Callbacks and How to Respond to Events
+13. Adding Animation to Websites
+14. Download the Completed Website
+15. Tip from Angela - Dealing with Lack of Progress

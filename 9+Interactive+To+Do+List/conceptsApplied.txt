@@ -1,0 +1,12 @@
+/* ------------------ Udemy Lessons HTML/CSS/JS Course Section 16 ------------------ */
+/* ------------------ The Document Object Model ------------------ */
+
+1. Adding Javascript to Websites
+2. Introduction to the Document Object Model (DOM)
+3. Solution to the DOM Challenge
+4. Selecting HTML Elements with Javascript
+5. Manipulating and Changing Styles of HTML Elements with Javascript
+6. The Separation of Concerns: Structure vs Style vs Behaviour
+7. Text Manipulation and the Text Content Property
+8. Manipulating HTML Element Attributes
+9. Tip from Angela - The 20 Minute Method
