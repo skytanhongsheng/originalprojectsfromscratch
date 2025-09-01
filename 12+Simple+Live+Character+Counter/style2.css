@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#inputBox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#counter {
+    font-weight: bold;
+    color: black;
+}

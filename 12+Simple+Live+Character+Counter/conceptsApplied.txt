@@ -1,0 +1,14 @@
+/* ------------------ Udemy Lessons HTML/CSS/JS Course Section 19 ------------------ */
+/* ------------------ jQuery ------------------ */
+
+1. What is jQuery?
+2. How to Incorporate jQuery into Websites
+3. How Minification Works to Reduce File Size
+4. Selecting Elements with jQuery
+5. Manipulating Styles with jQuery
+6. Manipulating Text with jQuery
+7. Manipulating Attributes with jQuery
+8. Adding Event Listeners with jQuery
+9. Adding and Removing Elements with jQuery
+10. Website Animations with jQuery
+11. Tip from Angela - Mixing Knowledge
